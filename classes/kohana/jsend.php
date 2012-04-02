@@ -72,7 +72,7 @@ class Kohana_JSend {
 			$options = JSend::DEFAULT_OPTIONS;
 		}
 		
-		$result = json_decode($json, $assoc, $depth, $options);
+		$result = json_decode($json, $assoc, $depth);
 		
 		return JSend::check_json_errors($result);
 	}
